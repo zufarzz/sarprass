@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --primary-color: #7065db;
+  --text-dark: #202020;
+  --text-light: #999999;
+  --border-light: #e6e6e6;
+  --white: #fff;
+  --hover-btn: #554cac;
+  --background-color: #e9e8f7;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.receipt-container {
+    background-color: white;
+    border-radius: 15px;
+    width: 320px;
+    padding: 20px;
+    box-shadow: 6px 6px 25px 0px #7065DB6B;
+    text-align: center;
+}
+
+
+.receipt-header {
+    margin-bottom: 20px;
+}
+
+.icon-checkmark {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.icon-checkmark img{
+    width: 25%;
+}
+
+h4 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #333;
+}
+
+.receipt-details {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.receipt-details p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #333;
+}
+
+.card .con{
+    background-color: #202020;
+}
+
+.card .btn{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-left: 350px;
+    width: 35%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.complete-button:hover {
+    background-color: #5a4ed0;
+}

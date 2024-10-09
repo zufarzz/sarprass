@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login| Sarana Prasarana</title>
+    <link rel="icon" href="img/logo-sekolah.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <div class="container">
+    <div class="wrapper">
+        <img src="img/logo-sekolah.svg" alt="">
+        <h1>SARANA PRASARANA</h1>
+        <form id="form" action="">
+            <div class="field input">
+                <h4>Email</h4>
+                <input type="email" name="email" id="email" placeholder="Masukkan Alamat Email Anda" autocomplete="off">
+                <label for="email-input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="error"></p>
+                </label>
+               
+            </div>
+           
+            <div class="field input">
+                <h4>Kata Sandi</h4>
+            <input type="password" name="password" id="password" placeholder="Masukkan Kata Sandi Anda">
+            <label for="password-input">
+                <i class="fa-solid fa-lock" style="bottom: 38px;"></i>
+                <img class="ajg" id="eyeicon" src="img/eye-off.svg" alt=""  style="width: 20px; position: relative; bottom: 30px; left: 300px; cursor: pointer;">
+            </label>
+            <p class="error"></p><br>
+            <a href="lupasandi.html" style=" text-align: center; margin-left: 219px;">Lupa Kata Sandi?</a>
+            </div>
+           <button type="submit">MASUK</button>
+        </form>
+        <p>Belum Punya Akun? <a href="signup.html">Daftar</a></p>
+    </div>
+</div>
+    <script src="js/signin.js"></script>
+</body>
+</html>

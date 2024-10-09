@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primary-color: #7065DB;
+    --text-dark: #202020;
+    --text-light: #999999;
+    --border-light:#E6E6E6;
+    --white: #fff;
+    --hover-btn: #554CAC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(../img/background-lupa-kata-sandi.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    background-color: var(--white);
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapper img{
+    width: 20%;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h6{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: min(350px, 100%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form > div{
+    flex-direction: column;
+    display: flex;
+}
+
+form p{
+    font-weight: 600;
+}
+
+p{
+    font-weight: 600;
+}
+
+h4{
+    font-size: 14px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+
+
+form i{
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    color: var(--text-light);
+}
+
+form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 45px;
+    padding: 0 10px 0 45px;
+    font: inherit;
+    border: 1px  solid var(--border-light);
+    border-radius: 20px;
+    transition: 150ms ease;
+}
+
+form input:hover{
+    border: 2px solid var(--primary-color);
+}
+
+form input:focus{
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+
+form  label i:hover{
+    color: var(--primary-color);
+}
+
+
+::-webkit-input-placeholder{
+    color: var(--text-light);
+}
+
+div:has(input:hover) > label i{
+    color: var(--primary-color);
+} 
+
+div:has(input:focus) > label i{
+    color: var(--primary-color);
+}
+
+form button{
+    border: none;
+    border-radius: 8px;
+    margin: 25px 95px 10px 100px;
+    padding: .85em 4em;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+form button:hover{
+background-color: var(--hover-btn);
+}
+
+form button:focus{
+    outline: none;
+    background-color: var(--hover-btn);
+}
+
+.error input {
+    border-color: #ff3860;
+}
+
+.error p{
+    color: #ff3860;
+   text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        margin-top: 15px;
+        height: 600px;
+        width: min(400px, 100%);
+        padding-right: 10px;
+        border-radius: 25px;
+    }
+
+    form {
+        width: min(350px, 100%);
+    }
+
+}

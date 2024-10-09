@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primary-color: #7065DB;
+    --text-dark: #202020;
+    --text-light: #999999;
+    --border-light:#E6E6E6;
+    --white: #fff;
+    --hover-btn: #554CAC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(../img/background-sekolah2.svg);
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    margin-top: 25px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    height: 550px;
+    width: max(5%, 425px);
+    padding: 15px 40px 50px 40px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.wrapper img{
+    width: 15%;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: min(350px, 100%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form > div{
+    flex-direction: column;
+    display: flex;
+}
+
+form p{
+    text-align: center;
+    font-weight: 600;
+}
+
+p{
+    font-weight: 600;
+}
+
+h4{
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+
+
+form i{
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    color: var(--text-light);
+}
+
+form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 45px;
+    padding: 0 10px 0 45px;
+    font: inherit;
+    border: 1px  solid var(--border-light);
+    border-radius: 20px;
+    transition: 150ms ease;
+}
+
+form input:hover{
+    border: 2px solid var(--primary-color);
+}
+
+form input:focus{
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+
+form  label i:hover{
+    color: var(--primary-color);
+}
+
+
+::-webkit-input-placeholder{
+    color: var(--text-light);
+}
+
+div:has(input:hover) > label i{
+    color: var(--primary-color);
+} 
+
+div:has(input:focus) > label i{
+    color: var(--primary-color);
+}
+
+form button{
+    border: none;
+    border-radius: 8px;
+    margin: 0 95px 5px 100px;
+    padding: .85em 4em;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+form button:hover{
+background-color: var(--hover-btn);
+}
+
+form button:focus{
+    outline: none;
+    background-color: var(--hover-btn);
+}
+
+.error input {
+    border-color: #ff3860;
+}
+
+.error p{
+    color: #ff3860;
+   text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        margin-top: 15px;
+        height: 600px;
+        width: min(400px, 100%);
+        padding-right: 10px;
+        border-radius: 25px;
+    }
+
+    form {
+        width: min(350px, 100%);
+    }
+
+}

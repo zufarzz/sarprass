@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Kata Sandi | Sarana Prasarana</title>
+    <link rel="icon" href="img/logo-sekolah.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/sandibaru.css">
+</head>
+<body>
+    <div class="container">
+    <div class="wrapper">
+        <img src="img/kata-sandi-baru.svg" alt="">
+        <h1>Buat Kata Sandi Baru</h1>
+        <h6>Buat Kata sandi baru Anda dan harus berbeda dengan <br>
+            kata sandi yang digunakan sebelumnya.</h6>
+        <form id="form" action="">
+            <div class="field input">
+                <h4>Kata Sandi Baru</h4>
+            <input type="password" name="password" id="password" placeholder="Masukkan Kata Sandi Anda">
+            <label for="password-input">
+                <i class="fa-solid fa-lock" style="bottom: 38px;"></i>
+                <img  id="eyeicon" src="img/eye-off.svg" alt=""  style="width: 20px; position: relative; bottom: 30px; left: 300px; cursor: pointer;">
+            </label>
+            <p class="error"></p>
+            </div>
+           <div class="field input">
+            <h4>Konfirmasi Kata Sandi</h4>
+            
+            <input type="password" name="password2" id="password2" placeholder="Masukkan Kata Sandi Anda">
+            <label for="repeat-password-input">
+                <i class="fa-solid fa-lock" style="bottom: 38px;"></i>
+                <img class="ajg" id="eyeoff" src="img/eye-off.svg" alt="" style="width: 20px; position: relative; bottom: 30px; left: 300px; cursor: pointer;">
+            </label>
+            <p class="error"></p>
+           </div>
+           <button type="submit">KIRIM</button>
+        </form>
+    </div>
+</div>
+    <script src="js/signup.js"></script>
+</body>
+</html>
