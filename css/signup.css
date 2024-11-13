@@ -21,7 +21,7 @@ html{
 
 body{
     min-height: 100vh;
-    background-image: url(../img/background-sekolah2.svg);
+    background-image: url(../img/background-sekolah.svg);
     background-size: cover;
     background-position: right;
     overflow: hidden;
@@ -37,24 +37,24 @@ body{
     box-sizing: border-box;
     background-color: var(--white);
     height: 550px;
-    width: max(5%, 425px);
-    padding: 15px 40px 50px 40px;
+    width: max(1%, 420px);
+    padding: 5px 20px 30px 20px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding-top: 10px;
 }
-
+    
 .wrapper img{
-    width: 15%;
+    width: 20%;
 }
 
 h1{
-    font-size: 20px;
+    font-size: px;
     font-weight: 900;
     margin-top: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
     text-transform: uppercase;
 }
 
@@ -64,7 +64,7 @@ form{
     gap: 3px;
     width: min(350px, 100%);
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 form > div{
@@ -83,7 +83,7 @@ p{
 
 h4{
     position: relative;
-    bottom: 5px;
+    bottom: 2px;
     left: 10px;
 }
 
@@ -119,7 +119,12 @@ form input:focus{
 form  label i:hover{
     color: var(--primary-color);
 }
-
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Atur jarak antar elemen di dalam form */
+}
+ 
 
 ::-webkit-input-placeholder{
     color: var(--text-light);

@@ -1,148 +1,152 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/beranda.css" />
-    <link rel="icon" href="img/logo-sekolah.svg" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarana Prasarana</title>
+    <link rel="stylesheet" href="css/beranda.css">
+</head>
 
-    <title>Beranda | Sarana Prasarana</title>
-  </head>
-  <body>
-    <!-- CONTENT -->
-    <section id="content">
-      <!-- NAVBAR -->
-      <nav>
-        <a href="#" class="nav-link">
-          <img src="img/logo-sarpras-sekolah.svg" style="width: 60%" alt="" />
-        </a>
-        <div class="links">
-          <a href="" style="color: #7065db">Beranda</a>
-          <a href="katalog.html">Katalog Barang</a>
-          <a href="#">Peminjaman</a>
-        </div>
-      </nav>
-      <!-- NAVBAR -->
+<body>
+    <!-- Header -->
+    <div class="grid-items">
+        <header class="header">
+            <img src="img/logo-sarpras-sekolah.svg" style="width: 20%" alt="" />
+            <nav class="navbar">
+                <a href="" style="color: #7065db">Beranda</a>
+                <a href="katalog.html">Katalog Barang</a>
+                <a href="riwayat peminjaman.html">Peminjaman</a>
+            </nav>
+        </header>
 
-      <!-- MAIN -->
-      <main>
-        <div class="head-title">
-          <div class="left">
-            <img src="img/banner.svg" alt="" />
-          </div>
-        </div>
-        <div class="table-data">
-          <div class="order">
-            <div class="head">
-              <h3>Daftar Barang</h3>
-            <a
-                href="katalog.html"><h6 style="color: black;">Lihat semua</h6>
-			</a>
-            </div>
-            <!-- <li class="lilian" style="background-color: #7065DB; padding: 20px;" >
-						<img src="barang/kabel-vga.png" alt="">
-						<p style="font-weight: 800; margin-left: 70px;">Kabel VGA</p>
-						<button style="margin-top: 15px; margin-left: 60px;" type="button" class="btn-lihat"> Pinjam </button>
-					</li> -->
+        <!-- Pure Image Banner -->
+        <div class="grid-items">
+            <section class="banner">
+                <img src="img/banner.svg" alt="Banner Image">
+            </section>
 
-            <ul class="box-info">
-              <li>
-                <span class="text">
-                  <img src="barang/kabel-vga.png" style="width: 100%" alt="" />
-                  <h3>Kabel VGA</h3>
-                  <a href="form.html"
-                    ><button type="button" class="btn-lihat">Pinjam</button></a
-                  >
-                </span>
-              </li>
-              <li>
-                <span class="text">
-                  <img src="barang/kabel-hdmi.png" style="width: 100%" alt="" />
-                  <h3>Kabel HDMI</h3>
-                  <button type="button" class="btn-lihat">Pinjam</button>
-                </span>
-              </li>
-              <li>
-                <span class="text">
-                  <img src="barang/proyektor.png" style="width: 100%" alt="" />
-                  <h3>Proyektor</h3>
-                  <button type="button" class="btn-lihat">Pinjam</button>
-                </span>
-              </li>
-              <li>
-                <span class="text">
-                  <img src="barang/stopkontak.png" style="width: 100%" alt="" />
-                  <h3>Stop Kontak</h3>
-                  <button type="button" class="btn-lihat">Pinjam</button>
-                </span>
-              </li>
-              <li>
-                <span class="text">
-                  <img src="barang/mikrofon.png" style="width: 100%" alt="" />
-                  <h3>Microfon</h3>
-                  <button type="button" class="btn-lihat">Pinjam</button>
-                </span>
-              </li>
-              <li>
-                <span class="text">
-                  <img src="barang/televisi.png" style="width: 100%" alt="" />
-                  <h3>Televisi</h3>
-                  <button type="button" class="btn-lihat">Pinjam</button>
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div class="todo">
-            <div class="head">
-              <h3>Riwayat</h3>
-              <h6>Lihat Semua</h6>
-            </div>
-            <ul class="todo-list">
-              <li class="completed">
-                <img src="barang/a_kabel-vga.svg" alt="" />
-                <p>Kabel VGA</p>
-                <button type="button" class="btn-lihat">Lihat</button>
-              </li>
-              <li class="completed">
-                <img src="barang/a_microfon.svg" alt="" />
-                <p>Microfon</p>
-                <button type="button" class="btn-lihat">Lihat</button>
-              </li>
-              <li class="completed">
-                <img src="barang/a_stopkotak.svg" alt="" />
-                <p>Stop Kontak</p>
-                <button type="button" class="btn-lihat">Lihat</button>
-              </li>
-              <li class="completed">
-                <img src="barang/a_proyektor.svg" alt="" />
-                <p>Proyektor</p>
-                <button type="button" class="btn-lihat">Lihat</button>
-              </li>
-              <li class="completed">
-                <img src="barang/a_kabel-hdmi.svg" alt="" />
-                <p>Kabel HDMI</p>
-                <button type="button" class="btn-lihat">Lihat</button>
-              </li>
-              <li class="completed">
-                <img src="barang/a_televisi.svg" alt="" />
-                <p>Televisi</p>
-                <button type="button" class="btn-lihat">Lihat</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </main>
-      <!-- MAIN -->
-    </section>
-    <!-- CONTENT -->
+            <!-- Container utama menggunakan grid 12 kolom -->
+            <main class="grid-container">
+                <!-- Daftar Barang -->
+                <section class="section daftar-barang">
+                    <div class="section-header">
+                        <h2>Daftar Barang Tersedia</h2>
+                        <a href="#">Lihat Semua</a>
+                    </div>
+                    <!-- Card Section -->
+                    <!-- Card Section -->
+                    <section class="card-container">
+                        <div class="card">
+                            <div class="card-item">
+                                <img src="barang/a_kabel-vga.svg" alt="Kabel VGA">
+                                <p>Kabel VGA</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_kabel-hdmi.svg" alt="Kabel HDMI">
+                                <p>Kabel HDMI</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_proyektor.svg" alt="Proyektor">
+                                <p>Proyektor</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_stopkotak.svg" alt="Proyektor">
+                                <p>Stop Kotak</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_microfon.svg" alt="Proyektor">
+                                <p>Microfon</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_televisi.svg" alt="Proyektor">
+                                <p>Televisi</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/meja.png" alt="Proyektor">
+                                <p>Meja Siswa</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/kursi siswa.svg" alt="Proyektor">
+                                <p>Kursi Siswa</p>
+                                <button>Pinjam</button>
+                            </div>
+                            <!-- Tambahkan lebih banyak item sesuai kebutuhan -->
+                        </div>
+                    </section>
+                </section>
+                
+                <!-- Riwayat Peminjaman -->
+                <section class="section riwayat-peminjaman">
+                    <div class="section-header">
+                        <h2>Riwayat Peminjaman</h2>
+                        <a href="#">Lihat Semua</a>
+                    </div>
+                    <section class="card-container">
+                        <div class="card-content">
+                            <div class="card-item">
+                                <img src="barang/pengki.png" alt="Pengki">
+                              <h1> <p>Pengki</p></h1> 
+                                <p>EE12N3</p>
+                                <div class="peminjaman-info">
+                                    <button class="lihat">Rincian</button>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_microfon.svg" alt="Pengki">
+                               <h1><p>Microfon</p></h1> 
+                               <p> AA456A</p>
+                                <div class="peminjaman-info">
+                                  
+                                    <button class="lihat">Rincian</button>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_kabel-vga.svg" alt="Pengki">
+                               <h1><p>Kabel VGA</p></h1> 
+                                <p>ABN991</p>
+                                <div class="peminjaman-info">
+                                    
+                                    <button class="lihat">Rincian</button>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/a_stopkotak.svg" alt="Pengki">
+                                <h1><p>Stop Kotak</p></h1>
+                                <p> ABCD99</p>
+                                <div class="peminjaman-info">
+                                   
+                                    <button class="lihat">Rincian</button>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/kursi siswa.svg" alt="Pengki">
+                               <h1> <p>Kursi Siswa</p></h1>
+                                <p>  R3DT04</p>
+                                <div class="peminjaman-info">
+                               
+                                    <button class="lihat">Rincian</button>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <img src="barang/kemoceng.png" alt="Pengki">
+                               <h1><p>Kemoceng</p></h1> 
+                                <p> AR2008</p>
+                                <div class="peminjaman-info">
+                                  
+                                    <button class="lihat">Rincian</button>
+                                </div>
+                            </div>
+                        <!-- Tambahkan kartu peminjaman lainnya di sini -->
+                    </section>
+                </section>
+            </main>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>

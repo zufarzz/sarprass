@@ -62,13 +62,14 @@ const validateInputs = () => {
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
-    if(usernameValue === '') {
-        setError(username, 'Nama Anda harus diisi');
-    } else if (usernameValue.length < 4 ){
-        setError(username, 'Minimal username adalah 4 karakter.')
-    }else {
-        setSuccess(username);
-    }
+   if (usernameValue === '') {
+    setError(username, 'Nama Anda harus diisi');
+} else if (usernameValue.length < 4) {
+    setError(username, 'Minimal username adalah 4 karakter.');
+} else {
+    setSuccess(username);
+}
+
 
     if(emailValue === '') {
         setError(email, 'Email Anda harus diisi');

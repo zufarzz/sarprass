@@ -12,13 +12,20 @@
     <div class="container">
     <div class="wrapper">
         <img src="img/logo-sekolah.svg" alt="">
-        <h1>SARANA PRASARANA</h1>
         <form id="form" action="">
             <div>
                 <h4>Nama</h4>
-                <input type="text" name="username" id="username" placeholder="Masukkan Nama Anda" autocomplete="off">
+                <input type="text" name="username" id="username" placeholder="Masukkan Nama Anda" autocomplete="off" required>
                 <label for="username-input">
                     <i class="fa-solid fa-user"></i>
+                </label>
+                <p class="error"></p>
+            </div>
+            <div class="field input">
+                <h4>NISN/NIP</h4>
+                <input type="NISN/NIP" name="NISN?NIP" id="NISN/NIP" placeholder="Masukkan NISN/NIP Anda" autocomplete="off">
+                <label for="NISN/NIP-input">
+                    <i class="fa-solid fa-envelope"></i>
                 </label>
                 <p class="error"></p>
             </div>
@@ -39,21 +46,11 @@
             </label>
             <p class="error"></p>
             </div>
-           <div class="field input">
-            <h4>Konfirmasi Kata Sandi</h4>
-            
-            <input type="password" name="password2" id="password2" placeholder="Masukkan Kata Sandi Anda">
-            <label for="repeat-password-input">
-                <i class="fa-solid fa-lock" style="bottom: 38px;"></i>
-                <img class="ajg" id="eyeoff" src="img/eye-off.svg" alt="" style="width: 20px; position: relative; bottom: 30px; left: 300px; cursor: pointer;">
-            </label>
-            <p class="error"></p>
-           </div>
            <button type="submit">DAFTAR</button>
            <p>Sudah Punya Akun? <a href="signin.html">Masuk</a></p>
         </form>
     </div>
 </div>
-    <script src="js/signup.js"></script>
+    <script src="js/signin.js"></script>
 </body>
 </html>

@@ -21,44 +21,47 @@ html{
 
 body{
     min-height: 100vh;
-    background-image: url(../img/background-lupa-kata-sandi.svg);
-    background-repeat: no-repeat;
+    background-image: url(../img/background\ kesalahan.svg);
     background-size: cover;
     background-position: right;
     overflow: hidden;
 }
 
+.img{
+    height: 50%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .wrapper{
+    margin-top: 50px;
     box-sizing: border-box;
     background-color: var(--white);
-    height: 100vh;
-    width: max(40%, 600px);
-    padding: 10px;
+    height: 490px;
+    width: max(2%, 400px);
+    padding: 10px 30px 40px 30px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 20px;
+   
     
 }
 
 .wrapper img{
-    width: 20%;
+    width: 30%;
 }
 
 h1{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 900;
-    margin-top: 16px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 3px;
     text-transform: uppercase;
-}
-
-h6{
-    text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--text-light);
-    margin-bottom: 15px;
 }
 
 form{
@@ -76,6 +79,7 @@ form > div{
 }
 
 form p{
+    text-align: center;
     font-weight: 600;
 }
 
@@ -84,7 +88,6 @@ p{
 }
 
 h4{
-    font-size: 14px;
     position: relative;
     bottom: 5px;
     left: 10px;
@@ -139,7 +142,7 @@ div:has(input:focus) > label i{
 form button{
     border: none;
     border-radius: 8px;
-    margin: 25px 95px 10px 100px;
+    margin: 0 95px 5px 100px;
     padding: .85em 4em;
     background-color: var(--primary-color);
     color: var(--white);
@@ -149,6 +152,7 @@ form button{
     cursor: pointer;
     transition: 150ms ease;
 }
+
 
 form button:hover{
 background-color: var(--hover-btn);

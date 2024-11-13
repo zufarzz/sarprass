@@ -1,0 +1,503 @@
+<html>
+ <head>
+  <title>
+   Peminjaman
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar img {
+            width: 200px;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 20px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .header button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            margin-left: 55%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header .user-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .main-content {
+            background-color: #f0f0f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .main-content p {
+            color: #888;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f0f0f5;
+            color: #333;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .status {
+            color: #554CAC;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-confirm {
+            background-color: #554CAC;
+            color: white;
+        }
+        .btn-details {
+            background-color: white;
+            color: #6c63ff;
+            border: 1px solid #6c63ff;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="sidebar">
+    <img alt="Logo" height="100" src="img/logo-sarpras-sekolah.svg" width="100"/>
+    <hr class="line-separator"> 
+    <ul>
+     <li>
+      <a href="dashboard.html">
+       <i class="fas fa-home">
+       </i>
+       Beranda
+      </a>
+     </li>
+     <li>
+        <a href="#" style="color: #554CAC">
+       <i class="fas fa-shopping-bag">
+       </i>
+       Peminjaman
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <i class="fas fa-box">
+       </i>
+       Kelola Barang
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <i class="fas fa-archive">
+       </i>
+       Stok Barang
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <i class="fas fa-history">
+       </i>
+       Riwayat
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="content">
+    <div class="header">
+     <input placeholder="Cari di Beranda" type="text"/>
+     <button>
+      Buka
+     </button>
+     <i class="fas fa-user user-icon">
+     </i>
+    </div>
+    <div class="main-content">
+     <h1>
+      Peminjaman
+     </h1>
+     <p>
+      Pantau dan konfirmasi peminjaman barang
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         No.
+        </th>
+        <th>
+         Nama
+        </th>
+        <th>
+         Kelas
+        </th>
+        <th>
+         Jurusan
+        </th>
+        <th>
+         Tanggal
+        </th>
+        <th>
+         Status
+        </th>
+        <th>
+         Aksi
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         1
+        </td>
+        <td>
+         Athaya Nafisa
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2
+        </td>
+        <td>
+         Nasya Duanta
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3
+        </td>
+        <td>
+         Muhammad Zufar
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4
+        </td>
+        <td>
+         Khansa Azahrah
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5
+        </td>
+        <td>
+         Naila Salsabila
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         6
+        </td>
+        <td>
+         Nikeisha Michaela
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         7
+        </td>
+        <td>
+         Malik Fathir
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         8
+        </td>
+        <td>
+         Farrel Arkana
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         9
+        </td>
+        <td>
+         Anastasya Sandy
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         10
+        </td>
+        <td>
+         Maria Angelica
+        </td>
+        <td>
+         XI
+        </td>
+        <td>
+         RPL A
+        </td>
+        <td>
+         12/02/2024
+        </td>
+        <td class="status">
+         Sedang Meminjam
+        </td>
+        <td>
+         <button class="btn btn-confirm">
+          Konfirmasi
+         </button>
+         <button class="btn btn-details">
+          Rincian
+         </button>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -51,7 +51,7 @@ const validateInputs = () => {
     
 
     if(emailValue === '') {
-        setError(email, 'Email Anda harus diisi');
+        setError(email, 'Anda belum mengisi nama!');
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'Alamat Email harus valid');
     } else {
@@ -59,7 +59,7 @@ const validateInputs = () => {
     }
 
     if(passwordValue === '') {
-        setError(password, 'Kata Sandi Anda harus diisi');
+        setError(password, 'Anda belum mengisi NISN/NIP');
     } else if (passwordValue.length < 8 ) {
         setError(password, 'Minimal kata sandi adalah 8 karakter.')
     } else {
